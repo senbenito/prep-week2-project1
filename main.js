@@ -62,8 +62,8 @@ document.getElementById("q4divide").innerHTML = firstNumber / secondNumber;
 //    that also places the appropriate space between the strings.
 //    Display the value of the third variable within the HTML page.
 
-
-
+var lastPart = " .", firstPart = "There should be a space before the period", wholePart = firstPart + lastPart;
+document.getElementById("q5").innerHTML = wholePart
 
 
 
