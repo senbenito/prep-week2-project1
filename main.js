@@ -71,8 +71,12 @@ document.getElementById("q5").innerHTML = wholePart
 // 6. Add, subract, multiply and divide the strings '5' and '3'.
 //    Observe the results and brieftly explain the results within the HTML page.
 
-
-
+var firstString = "5",
+secondString = "3"
+document.getElementById("q6add").innerHTML = firstString + secondString;
+document.getElementById("q6subtract").innerHTML = firstString - secondString;
+document.getElementById("q6multiply").innerHTML = firstString * secondString;
+document.getElementById("q6divide").innerHTML = firstString / secondString;
 
 
 
