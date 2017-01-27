@@ -78,6 +78,7 @@ document.getElementById("q6subtract").innerHTML = firstString - secondString;
 document.getElementById("q6multiply").innerHTML = firstString * secondString;
 document.getElementById("q6divide").innerHTML = firstString / secondString;
 
+document.getElementById('q6note').innerHTML = "Note: I think because Addition will work as a concatenation method, that it does not innately Type Coerce."
 
 
 

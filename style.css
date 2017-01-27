@@ -3,7 +3,7 @@
 
 
 main {
-  width: 600px; 
+  width: 600px;
   margin: auto;
   padding-bottom: 300px;
 }
@@ -23,6 +23,11 @@ h2 {
 	font-size: 32px;
 	font-family: 'Lobster', cursive;
 }
+span {
+  font-size: 14px;
+  font-family: 'Lobster';
+  color: red
+}
 
 header h2 {
     color: #fff;<table class="table table-striped row-highlight table-condensed">
@@ -38,7 +43,7 @@ header h2 {
     <tbody>
     </tbody>
 </table>
-  
+
 }
 
 p {
@@ -47,16 +52,16 @@ p {
 }
 
 .center {
-  text-align: center;	
+  text-align: center;
 }
 
 .status-bad {
     color: red;
-} 
+}
 
 .status-good {
     color: green;
-} 
+}
 
 .status-ok {
 	color: orange;
