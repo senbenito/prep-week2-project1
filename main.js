@@ -86,7 +86,9 @@ document.getElementById('q6note').innerHTML = "Note: I think because Addition wi
 // 7. When a button is clicked, add content into the ID "q7".
 
 
-
+document.getElementById('callAlert').addEventListener('click', function(){
+  document.getElementById('q7').innerHTML = "CREATURE REPORT! CREATURE REPORT!"
+});
 
 
 
@@ -94,7 +96,10 @@ document.getElementById('q6note').innerHTML = "Note: I think because Addition wi
 // 8. Collect a number value from the user and when a button is clicked,
 //    then double user's answer and display that value into the HTML page.
 
-
+document.getElementById('callDoubleNum').addEventListener('click', function(){
+var doubleNum = document.getElementById('doubleNum');
+  document.getElementById('q8').innerHTML = doubleNum * 2;
+});
 
 
 
