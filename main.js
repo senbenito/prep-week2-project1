@@ -98,7 +98,7 @@ document.getElementById('callAlert').addEventListener('click', function(){
 
 document.getElementById('callDoubleNum').addEventListener('click', function(){
 var doubleNum = document.getElementById('doubleNum');
-  document.getElementById('q8').innerHTML = doubleNum * 2;
+  document.getElementById('q8').innerHTML = doubleNum;
 });
 
 
@@ -111,7 +111,15 @@ var doubleNum = document.getElementById('doubleNum');
 //    If so, output to the HTML page: Yes, the value of num1 is greater than num2
 //    If not, output to the HTML page: No, the value of num1 is not greater than num2
 
+var num1 = 5;
+num2 = 10;
 
+if (num1 > num2) {
+  var output9 = 'Yes, the value of num1 is greater than num2.';
+} else {
+  var output9 = 'No, the value of num1 is not greater than num2.';
+}
+document.getElementById('q9').innerHTML = output9;
 
 
 
@@ -123,7 +131,16 @@ var doubleNum = document.getElementById('doubleNum');
 //    If the score is between 60 and 89, output to the HTML page "Nice work, keep practicing".
 //    If the score is below 59, output to the HTML page "Very bad: study more and retake the test".
 //    Test to make sure each condition is met properly.
-
+// var score = 97;
+//
+// if (score > 90) {
+//   var output10 = 'Great job!';
+// } else if (score >= 60) && (score <= 89) {
+//   var output10 = 'Nice work, keep practicing.';
+// } else (score > 59) {
+//   var output10 = 'Very bad: study more and retake the test...';
+// }
+// document.getElementById('q10').innerHTML = output10;
 
 
 
@@ -136,7 +153,12 @@ var doubleNum = document.getElementById('doubleNum');
 //    In a single command, take the user's answers and display into the HTML page the sentence:
 //   "My name is __. I'm __ years old, and I live in __."
 
-
+document.getElementById('callAboutMe').addEventListener('click', function(){
+var qAName = document.getElementById('qAName');
+var qAAge = document.getElementById('qAAge');
+var qACity = document.getElementById('qACity');
+  document.getElementById('qa').innerHTML = 'My name is ' + qAName + '.' + 'Im ' +  qAAge + ' years old, and I live in ' + qACity + '.'
+});
 
 
 
@@ -145,7 +167,8 @@ var doubleNum = document.getElementById('doubleNum');
 //     The rectangle is: 2 inches by 3 inches
 //     Display the result in the HTML page.
 
-
+var height = 2, length = 3;
+document.getElementById('qb').innerHTML = 'The area is: ' + (height * length) + ' square inches.'
 
 
 
