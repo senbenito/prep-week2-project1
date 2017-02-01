@@ -97,7 +97,9 @@ document.getElementById('callAlert').addEventListener('click', function(){
 //    then double user's answer and display that value into the HTML page.
 
 document.getElementById('callDoubleNum').addEventListener('click', function(){
-var doubleNum = document.getElementById('doubleNum').value;
+// var doubleNum = document.getElementById('doubleNum').value;
+var doubleNum = document.getElementById('doubleNum');
+console.log("doubleNum: ", doubleNum);
   document.getElementById('q8').innerHTML = doubleNum * 2;
 });
 
@@ -131,16 +133,16 @@ document.getElementById('q9').innerHTML = output9;
 //    If the score is between 60 and 89, output to the HTML page "Nice work, keep practicing".
 //    If the score is below 59, output to the HTML page "Very bad: study more and retake the test".
 //    Test to make sure each condition is met properly.
-// var score = 97;
-//
-// if (score > 90) {
-//   var output10 = 'Great job!';
-// } else if (score >= 60) && (score <= 89) {
-//   var output10 = 'Nice work, keep practicing.';
-// } else (score > 59) {
-//   var output10 = 'Very bad: study more and retake the test...';
-// }
-// document.getElementById('q10').innerHTML = output10;
+var score = 97;
+
+if (score > 90) {
+  var output10 = 'Great job!';
+} else if (score >= 60 && score <= 89) {
+  var output10 = 'Nice work, keep practicing.';
+} else {
+  var output10 = 'Very bad: study more and retake the test...';
+}
+document.getElementById('q10').innerHTML = output10;
 
 
 
@@ -201,7 +203,32 @@ var userName = document.getElementById('userName').value;
 //    If the score is between 60 and 89, display a message of "Nice work, keep practicing.".
 //    If the score is below 59, display a message of "Very bad: study more and retake the test.".
 //    You can get fancy by adding CSS styles to each of these displays to change the color, too - Green=Good, Orange=OK, Red=Bad
+document.getElementById('scoreMe').addEventListener('click', function(){
+var userScore = document.getElementById('userScore').value;
 
+// var outputE = ['Good', 'OK', 'Bad'];
+// if (userScore > 90) {
+//   var outputE = 'Great job!';
+// } else if (userScore >= 60 && userScore <= 89) {
+//   var outputE = 'Nice work, keep practicing.';
+// } else {
+//   var outputE = 'Very bad: study more and retake the test...'
+// }
+// document.getElementById('qe').innerHTML = outputE;
+
+  if (userScore > 90) {
+    var outputE = '<span class=status-good>Great job!</span>';
+  } else if (userScore >= 60 && userScore <= 89) {
+    var outputE = '<span class=status-ok>Nice work, keep practicing.</span>';
+  } else {
+    // var outputE = 'Very bad: study more and retake the test...';
+    // classList.add("status-bad");
+    var outputE = '<span class=status-bad>Very bad: study more and retake the test...</span>'
+  }
+  document.getElementById('qe').innerHTML = outputE;
+
+
+});
 
 
 
