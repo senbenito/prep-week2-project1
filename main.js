@@ -97,8 +97,8 @@ document.getElementById('callAlert').addEventListener('click', function(){
 //    then double user's answer and display that value into the HTML page.
 
 document.getElementById('callDoubleNum').addEventListener('click', function(){
-var doubleNum = document.getElementById('doubleNum');
-  document.getElementById('q8').innerHTML = doubleNum;
+var doubleNum = document.getElementById('doubleNum').value;
+  document.getElementById('q8').innerHTML = doubleNum * 2;
 });
 
 
@@ -154,9 +154,9 @@ document.getElementById('q9').innerHTML = output9;
 //   "My name is __. I'm __ years old, and I live in __."
 
 document.getElementById('callAboutMe').addEventListener('click', function(){
-var qAName = document.getElementById('qAName');
-var qAAge = document.getElementById('qAAge');
-var qACity = document.getElementById('qACity');
+var qAName = document.getElementById('qAName').value;
+var qAAge = document.getElementById('qAAge').value;
+var qACity = document.getElementById('qACity').value;
   document.getElementById('qa').innerHTML = 'My name is ' + qAName + '.' + 'Im ' +  qAAge + ' years old, and I live in ' + qACity + '.'
 });
 
@@ -175,7 +175,11 @@ document.getElementById('qb').innerHTML = 'The area is: ' + (height * length) + 
 
 // C. Collect the use's length and width input to determine the area of a rectangle and display within the HTML page the result.
 
-
+document.getElementById('callArea').addEventListener('click', function(){
+var userHeight = document.getElementById('userHeight').value;
+var userLength = document.getElementById('userLength').value;
+document.getElementById('qc').innerHTML = 'The area is: ' + (userHeight * userLength) + ' square inches.'
+});
 
 
 
@@ -183,7 +187,10 @@ document.getElementById('qb').innerHTML = 'The area is: ' + (height * length) + 
 
 // D. Have the user enter their name into a textfield. When they click a button, find the length (number of characters) of their name and display the result in the HTML page.
 
-
+document.getElementById('countName').addEventListener('click', function(){
+var userName = document.getElementById('userName').value;
+  document.getElementById('qd').innerHTML = "Your name is " + userName.length + ' characters long.'
+});
 
 
 
